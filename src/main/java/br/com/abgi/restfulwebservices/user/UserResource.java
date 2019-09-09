@@ -22,4 +22,5 @@ public class UserResource {
 	public User retrieveAllUsers(@PathVariable int id){
 		return service.findOne(id);
 	}
+	
 }
