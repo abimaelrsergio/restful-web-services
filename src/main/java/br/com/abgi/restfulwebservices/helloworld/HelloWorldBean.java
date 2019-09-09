@@ -1,19 +1,16 @@
 package br.com.abgi.restfulwebservices.helloworld;
 
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
 public class HelloWorldBean {
 
 	private String message;
 
 	public HelloWorldBean(String message) {
 		this.message = message;
-	}
-
-	public void setMessage(String message) {
-		this.message = message;
-	}
-
-	public String getMessage() {
-		return message;
 	}
 
 	@Override
