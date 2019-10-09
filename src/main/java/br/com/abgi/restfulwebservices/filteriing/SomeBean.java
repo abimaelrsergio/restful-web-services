@@ -1,16 +1,14 @@
 package br.com.abgi.restfulwebservices.filteriing;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonFilter;
 
+@JsonFilter("SomeBeanFilter")
 public class SomeBean {
 
 	private String field1;
 	
-	@JsonIgnore
 	private String field2;
 	
-	//password field
-	@JsonIgnore
 	private String fiels3;
 
 	public SomeBean(String field1, String field2, String fiels3) {
