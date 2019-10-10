@@ -15,4 +15,8 @@
 
 	a) Instale o: Spring Tools Eclipse plugin
 	
-
+5) No Spring 2.0.0.M4, o nome das duas propriedades do spring security foram atualizadas (para Basic Authentication):
+	
+	a) o usuario padrão é user
+	b) spring.security.user.name=username
+	c) spring.security.user.password=password
