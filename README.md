@@ -20,3 +20,9 @@
 	a) o usuario padrão é user
 	b) spring.security.user.name=username
 	c) spring.security.user.password=password
+	
+6) H2 database:
+	
+	a) localhost:8080/h2-console
+	b) JDBC URL: jdbc:h2:mem:testdb
+	
