@@ -1,10 +1,12 @@
 package br.com.abgi.restfulwebservices.user;
 
 import java.util.Date;
+import java.util.List;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.validation.constraints.Past;
 import javax.validation.constraints.Size;
 
@@ -33,6 +35,9 @@ public class User {
 	@Past
 	private Date birthDate;
 
+	@OneToMany(mappedBy="user")
+	private List<Post> posts;
+	
 	public User() {}
 	
 	public User(Integer id, String name, Date birthDate) {
